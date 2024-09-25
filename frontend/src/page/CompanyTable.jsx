@@ -100,6 +100,8 @@ const CompanyTableWithModal = () => {
     setCompanies([...companies, newCompany]);
   };
 
+  
+
   return (
     <div className="p-8 bg-gray-100 min-h-screen">
       <div className="flex justify-between items-center mb-6">
