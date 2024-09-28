@@ -1,4 +1,6 @@
 import User from "../Model/userModel.js";
+import jwt from "jsonwebtoken";
+
 const checkAdmin = async (req, res, next) => {
   const token = req.cookies.jwt;
   if (!token) {
