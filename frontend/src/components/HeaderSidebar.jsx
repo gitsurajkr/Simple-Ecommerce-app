@@ -6,8 +6,8 @@ import { MdOutlineShoppingCart, MdOutlineWbSunny } from "react-icons/md";
 import { IoCubeOutline } from "react-icons/io5";
 import { HiOutlineDocumentText } from "react-icons/hi2";
 import { FaRegBuilding, FaRegMoon, FaRegBell } from "react-icons/fa";
-import { RiStarSLine } from "react-icons/ri";
-import GridCard from "./GridCard";
+// import { RiStarSLine } from "react-icons/ri";
+
 import { useNavigate } from "react-router-dom";
 import {
   DropdownMenu,
@@ -17,34 +17,10 @@ import {
   DropdownMenuTrigger,
 } from "@radix-ui/react-dropdown-menu";
 
-const Sidebar = () => {
+const HeaderSidebar = () => {
   const [activeTab, setActiveTab] = useState("dashboard");
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
-  
-const [products, setProducts] = useState([
-  {
-    name: "Laptop",
-    price: "999.99",
-    stock: "50",
-    company: "TechCorp",
-    category: "Electronics",
-  },
-  {
-    name: "Smartphone",
-    price: "499.99",
-    stock: "100",
-    company: "MobiTech",
-    category: "Electronics",
-  },
-  {
-    name: "Headphones",
-    price: "99.99",
-    stock: "200",
-    company: "AudioPro",
-    category: "Audio",
-  },
-])
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -206,10 +182,9 @@ const [products, setProducts] = useState([
             </DropdownMenu>
           </div>
         </header>
-        <GridCard />
       </div>
     </div>
   );
 };
 
-export default Sidebar;
+export default HeaderSidebar;

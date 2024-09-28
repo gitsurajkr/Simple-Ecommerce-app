@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+
 const AddProduct = ({ products, setProducts }) => {
   const navigate = useNavigate();
   const [product, setProduct] = useState({
@@ -28,6 +29,7 @@ const AddProduct = ({ products, setProducts }) => {
 
   return (
     <div className="container mx-auto p-4">
+     
       <h2 className="text-xl font-semibold mb-4">Add New Product</h2>
       <form className="bg-white p-6 rounded shadow" onSubmit={handleSubmit}>
         <div className="mb-4">

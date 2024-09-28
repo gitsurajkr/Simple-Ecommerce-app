@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const ManageProducts = ({ products, setProducts }) => {
+
+
   const navigate = useNavigate();
 
   // Delete product function

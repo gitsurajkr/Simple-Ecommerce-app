@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+
 // Modal Component for Adding a Company
 const AddCompanyModal = ({ isOpen, onClose, onAddCompany }) => {
   const [name, setName] = useState('');
@@ -20,9 +21,12 @@ const AddCompanyModal = ({ isOpen, onClose, onAddCompany }) => {
   if (!isOpen) return null;
 
   return (
+      
     <div className="fixed inset-0 bg-black bg-opacity-30 flex justify-center items-center">
+      
       <div className="bg-white p-6 rounded-lg shadow-lg w-96">
         <div className="flex justify-between items-center">
+        
           <h2 className="text-xl font-semibold">Add New Company</h2>
           <button onClick={onClose} className="text-xl">&times;</button>
         </div>
